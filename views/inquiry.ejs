@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class-app inquiry</title>
+    <link rel="stylesheet" href="/css/inquiry.css">
+    <!--<script src="/js/inquiry" defer></script>-->
+</head>
+<body>
+    <div id="header">
+        <a href="/home">
+            <img id="logo" src="/images/logo.png" alt="ロゴ">
+        </a>
+    </div>
+    <h1>お問い合わせ(クレーム対応)</h1>
+    <h3>要件をお書きください</h3>
+    <form action="/inquiry" method="POST">
+        <textarea name="claim" id="claim" placeholder="要件をお書きください"></textarea>
+        <br>
+        <button type="submit" id="send">送信</button>
+    </form>  
+</body>
+</html>

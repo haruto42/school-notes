@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#header {
+    background-color: aqua;
+    padding: 5px 20px;
+    display:flex;
+    text-align: center;
+    align-items: center;
+}
+#logo{
+    width:100px;
+    height:auto;
+}

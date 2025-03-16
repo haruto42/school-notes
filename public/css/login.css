@@ -1,0 +1,23 @@
+.login{
+    margin-left:690px;
+    margin-top:200px;
+}
+#user{
+    width: 200px;
+    height:40px;
+    margin-top:5px;
+    margin-left:655px;
+}
+#pass{
+    width: 200px;
+    height:40px;
+    margin-top:20px;
+    margin-left:655px;
+}
+#loginBotton{
+    width: 200px;
+    height:40px;
+    margin-top:20px;
+    margin-left:660px;
+    background-color:greenyellow;
+}

@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header {
+    background-color: aqua;
+    padding: 5px 20px;
+    display:flex;
+    text-align: center;
+    align-items: center;
+}
+#logo{
+    width:100px;
+    height:auto;
+}
+#logout{
+    background-color:aquamarine;
+    border:10px;
+    border-color:black;
+    padding:3px;
+    text-decoration: none;
+    color:black;
+    margin-left:20px;
+}
+#apps{
+    display:flex;
+}
+.app{
+    width:100px;
+    height:auto;
+}
+#maillink{
+    width:100px;
+    height:auto;
+}
+#inquirylink{
+    width:100px;
+    height:auto;
+}
+#settinglink{
+    width:100px;
+    height:auto;
+}

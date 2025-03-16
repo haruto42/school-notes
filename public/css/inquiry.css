@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#header {
+    background-color: aqua;
+    padding: 5px 20px;
+    display:flex;
+    text-align: center;
+    align-items: center;
+}
+#logo{
+    width:100px;
+    height:auto;
+}
+#claim{
+    width:400px;
+    height:100px;
+    resize:none;
+}
+#send{
+    width:100px;
+    height:50px;
+    font-size:30px;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/home.css">
+    <title>class-app home</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="header">
+        <img id="logo" src="/images/logo.png" alt="ロゴ">
+        <a id="logout" href="/logout">ログアウト</a>
+    </div>
+    <h1>ようこそ <%= user %> さん</h1>
+    <h1>ホーム</h1>
+    <h3>当社アプリ</h3>
+    <div id="apps">
+        <a href="/inquiry">
+            <img class="app" src="/images/inquiry.png" alt="お問い合わせ">
+        </a>
+        <a href="/setting">
+            <img class="app" src="/images/setting.png" alt="設定">
+        </a>
+    </div>
+</body>
+</html>

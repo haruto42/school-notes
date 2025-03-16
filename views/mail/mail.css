@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#header {
+    background-color: aqua;
+    padding: 5px 20px;
+    display:flex;
+    text-align: center;
+    align-items: center;
+}
+#logo{
+    width:100px;
+    height:auto;
+}
+#mail{
+    display: flex;
+}
+#send{
+    border-right:5px solid #000;
+}
+#message_1{
+    margin-top:0px;
+}
+#message{
+    margin-top:0px;
+    width:250PX;
+    height:50PX;
+    resize: none;
+}
+#message_2{
+    margin-top:10px;    
+}
+#message_3{
+    margin-top:10px;    
+}
+#message_4{
+    margin-top:10px;    
+}
+#touser{
+    margin-top:10px;    
+}
+#button{
+    width:200px;
+    height:50px;
+    font-size:30px;
+    margin-top:10px;    
+}

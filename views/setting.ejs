@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class-app setting</title>
+    <link rel="stylesheet" href="/css/setting.css">
+</head>
+<body>
+    <div id="header">
+        <a href="/home">
+            <img id="logo" src="/images/logo.png" alt="ロゴ">
+        </a>
+    </div>
+    <div>
+        <h3>ユーザー名とパスワードを変更する</h3>
+        <p>※片方だけ変換する場合変えない方はそのまま今のを書いてください</p>
+        <form action="/setting" method="POST">
+            <input id="user" name="user" type="text" placeholder="新ユーザー名"><br>
+            <input id="password" name="password" type="password" placeholder="今のパスワード"><br>
+            <input id="newpassword1" name="password1" type="password" placeholder="新しいパスワード"><br>
+            <input id="newpassword2" name="password2" type="password" placeholder="パスワードの確認"><br>
+            <button id="button">変更する</button>
+        </form>
+    </div>
+</body>
+</html>
