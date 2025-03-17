@@ -1,3 +1,4 @@
+//https://school-notes.onrender.com/
 //Nodo.jsの準備
 const express = require('express');
 const app = express();
@@ -62,18 +63,32 @@ app.post("/login", (req, res) => {
         }
         
         if (results.length > 0) {
-            console.log('ログイン成功！');
-            req.session.user = user;
-            res.redirect("/home"); // 認証成功→ホームへリダイレクト
+            const sql = 'select * from users where user = ? and `lock` = 0'
+            connection.query(sql,[user],(err,results) => {
+                if (results.length > 0) {
+                    console.log('ログイン成功！');
+                    req.session.user = user;
+                    res.redirect("/home"); // 認証成功→ホームへリダイレクト admin
+                } else {
+                    console.log('アカウントが停止しています');
+                    res.send('アカウントが停止されています。')//アカバン
+                }
+            });
         } else {
             console.log('ユーザー名またはパスワードが違います');
             res.send('ユーザー名またはパスワードが違います');
         }
     });
 });
-///setting
-app.get("/setting",(req,res) => {
-    res.render("setting")
+///settings
+app.get("/settings",(req,res) => {
+    const sql = 'select admin from users where user = ?'
+    connection.query(sql,[req.session.user],(err,results) => {
+        if (results.length > 0) {
+            res.render("admin_setting")
+        }
+    });
+    res.render("user_setting")
 })
 app.post('/setting', (req, res) => {
     const { user, password, password1, password2 } = req.body;
@@ -151,6 +166,6 @@ app.post('/inquiry',(req,res) => {
 
 //こっからサーバー関連。
 
-app.listen(port,() => {
+app.listen(process.env.PORT || port,() => {
     console.log(`サーバーが http://localhost:${port} で起動中！`);
 });
